@@ -1,0 +1,92 @@
+.header-page{
+  padding-top: 20px;
+  padding-bottom: 131px;
+  position: relative;
+  background-image: url("/img/header_bg.svg");
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+  &--background{
+
+  }
+
+  &__nav-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+
+    &--link{
+      color: #ffffff;
+      font-family: $font-bold, sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+
+      &:hover{
+        color: #BB10E9;
+      }
+    }
+
+  }
+  &__content {
+    width: 100%;
+    margin-top: 67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &__bubbles{
+      position: absolute;
+      top: 0;
+      right: 0%;
+      height: 100%;
+      width: 40%;
+      z-index: 1;
+    }
+    &__text{
+      &__button{
+        margin-top: 20px;
+        padding: 12px 40px;
+        background: linear-gradient(101.91deg, #BF0CE8 0%, #6A5DF5 100%);
+        border: 1px solid #BC84EC;
+        box-sizing: border-box;
+        border-radius: 33px;
+
+        &-description{
+          font-family: $font-bold;
+          font-size: 18px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+    &__brand{
+      width: 40%;
+      display: inline-block;
+      text-align: center;
+
+      &__logo{
+
+      }
+      &__title{
+        margin-top: 20px;
+      }
+      &--invite{
+        font-size: 24px;
+      }
+
+  }
+
+
+  &__content__text{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: $font-bold;
+    color: #fff;
+    width: 40%;
+  }
+}
