@@ -1,9 +1,9 @@
 .header-page{
   padding-top: 20px;
-  padding-bottom: 131px;
+  padding-bottom: 271px;
   position: relative;
   background-image: url("/img/header_bg.svg");
-  background-size: initial;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -54,6 +54,10 @@
         border: 1px solid #BC84EC;
         box-sizing: border-box;
         border-radius: 33px;
+
+        &:hover{
+          background: linear-gradient(101.91deg, #6A5DF5 0%, #BF0CE8 100%);
+        }
 
         &-description{
           font-family: $font-bold;
