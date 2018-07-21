@@ -3,6 +3,7 @@ $font-bold: 'UnileverDINOffcPro-Bold';
 $font-boldita: 'UnileverDINOffcPro-BoldIta';
 $font-italic: 'UnileverDINOffcPro-Ita';
 $font-title-color: #242424;
+$text-hover-color: #BB10E9;
 //before block for polygon
 
 %polygon-position{
@@ -42,4 +43,11 @@ $font-title-color: #242424;
   padding-top: 100px;
   width: 25%;
   position:relative;
+}
+%button-side{
+  font-family: $font-normal;
+  color: #FFC000;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 60px;
 }
