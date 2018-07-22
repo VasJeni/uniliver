@@ -1,24 +1,40 @@
-//Unilever in world
-.uiw {
-  padding-top: 30px;
+.in-Ukraine{
+  padding-top: 80px;
 
-  &__section-name{
+  &__section-name {
     width: 100%;
 
-    &--title{
+    &--title {
       @extend %section-title;
 
     }
-    &--description{
+    &--description {
       @extend %section-description;
     }
   }
-  &__world-coverage{
+  &__in-country-coverage {
     display: flex;
     justify-content: space-around;
     margin-top: 91px;
+    &__co-worker{
+      @extend %polygon-block;
 
-    &__countries {
+      &::before{
+        @extend %polygon-position;
+        background-image: url("/img/Polygon 2.11.png");
+      }
+      &__numbers{
+        @extend %number-after-polygon;
+
+        &--sub-numbers{
+          @extend %sub-title-after-polygon;
+        }
+      }
+      &__text{
+        @extend %text-after-polygon;
+      }
+    }
+    &__investments {
       @extend %polygon-block;
 
       &::before {
@@ -36,39 +52,21 @@
         @extend %text-after-polygon;
       }
     }
-    &__users{
+    &__duration {
       @extend %polygon-block;
 
-      &::before{
+      &::before {
         @extend %polygon-position;
         background-image: url("/img/Polygon 2.9.png");
       }
-      &__numbers{
+      &__numbers {
         @extend %number-after-polygon;
 
-        &--sub-numbers{
+        &--sub-numbers {
           @extend %sub-title-after-polygon;
         }
       }
-      &__text{
-         @extend %text-after-polygon;
-      }
-    }
-    &__co-worker{
-      @extend %polygon-block;
-
-      &::before{
-        @extend %polygon-position;
-        background-image: url("/img/Polygon 2.11.png");
-      }
-      &__numbers{
-        @extend %number-after-polygon;
-
-        &--sub-numbers{
-          @extend %sub-title-after-polygon;
-        }
-      }
-      &__text{
+      &__text {
         @extend %text-after-polygon;
       }
     }

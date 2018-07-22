@@ -1,0 +1,67 @@
+%polygon-position{
+  display: block;
+  content:"";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background-repeat: no-repeat;
+  top: 15%;
+  left: -40px;
+  z-index: -1;
+}
+%font-bold{
+  font-family: $font-bold;
+  font-weight: bold;
+  font-style: normal;
+}
+%font-normal{
+  font-family: $font-normal;
+  font-weight: normal;
+  font-style: normal;
+}
+
+%number-after-polygon{
+  @extend %font-bold;
+  font-size: 72px;
+  color: #fff;
+}
+%sub-title-after-polygon{
+  @extend %font-bold;
+  font-size: 24px;
+  margin-top: 5px;
+  color: #000000;
+  font-style: normal;
+  font-weight: bold;
+}
+%text-after-polygon{
+  @extend %font-normal;
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+%polygon-block{
+  padding-top: 100px;
+  width: 25%;
+  position:relative;
+}
+%button-side{
+  @extend %font-normal;
+  color: #FFC000;
+  font-size: 60px;
+}
+%section-title{
+  @extend %font-bold;
+  text-align: center;
+  font-size: 60px;
+  color: $font-title-color;
+}
+%section-description{
+  @extend %font-normal;
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: center;
+  color: black;
+  width: 60%;
+  line-height: 1.5em;
+  font-size: 18px;
+}

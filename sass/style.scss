@@ -1,7 +1,10 @@
 @import "core/_reset.scss";
 @import "core/_variable.scss";
+@import "core/_Inheritance.scss";
+//@import "core/_mixin.scss"; if need first add some mixin
 @import "core/_fonts.scss";
 @import "core/_container.scss"; // need delete class test
 @import "blocks/_header.scss";
 @import "blocks/_section_Unilever-in-world";
 @import "blocks/_section-brands.scss";
+@import "blocks/_section-in-Ukraine.scss";
