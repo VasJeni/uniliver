@@ -23,7 +23,7 @@
 
       &::before {
         @extend %polygon-position;
-        background-image: url("/img/Polygon 2.8.png");
+        background-image: url("../img/Polygon 2.8.png");
       }
       &__numbers {
         @extend %number-after-polygon;
