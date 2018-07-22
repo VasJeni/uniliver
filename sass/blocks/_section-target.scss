@@ -13,26 +13,27 @@
       &-first{
         position: absolute;
         z-index: 2;
-        top: 5%;
+        top: 50%;
         left: 0;
         width: 90%;
-        transform: translateY(-30%);
+        transform: translateY(-100%) scale(1.4, 1.4);
       }
       &-second{
         position: absolute;
         z-index: 3;
-        top: 5%;
+        top: 50%;
         right: 0;
-        transform: translate(56%, 80%);
+        transform: translate(100%, -50%) scale(1.4, 1.4);
         width: 40%;
       }
       &-third{
         position: absolute;
         z-index: 2;
-        top: 5%;
+        top: 50%;
         left: 0;
         width: 90%;
-        transform: translateY(30%);
+        transform: translateY(0%) scale(1.4, 1.4);
+
       }
     }
   }
