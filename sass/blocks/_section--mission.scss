@@ -1,0 +1,51 @@
+.mission{
+  padding: 200px 0 250px 0;
+  background-image: url("/img/bg-mission.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+
+  &__wrap{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__section{
+    &-description{
+      position: relative;
+      width: 45%;
+
+      &::before{
+        @extend %before;
+        width: 100%;
+        height: 100%;
+        background-image: url("/img/bird.svg");
+        background-size: contain;
+        z-index: -1;
+        background-repeat: no-repeat;
+/*        transform: translate(-25%, -50%);*/
+        top: -30%;
+        left: -25%;
+      }
+    }
+    &--title{
+      @extend %section-title;
+      text-align: left;
+    }
+    &--sub-title{
+      margin-top: 20px;
+      @extend %section-sub-title;
+      text-align: left;
+      width: 100%;
+    }
+    &--text{
+      @extend %section-description;
+      width: 100%;
+      text-align: left;
+    }
+    &--image {
+      width: 45%;
+    }
+  }
+}

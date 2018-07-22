@@ -1,7 +1,13 @@
-%polygon-position{
+//base
+%before{
   display: block;
   content:"";
   position: absolute;
+}
+
+//main
+%polygon-position{
+  @extend %before;
   width: 120%;
   height: 120%;
   background-repeat: no-repeat;
@@ -37,7 +43,7 @@
   @extend %font-normal;
   margin-top: 30px;
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 %polygon-block{
   padding-top: 100px;
@@ -53,6 +59,12 @@
   @extend %font-bold;
   text-align: center;
   font-size: 60px;
+  color: $font-title-color;
+}
+%section-sub-title{
+  @extend %font-bold;
+  text-align: center;
+  font-size: 36px;
   color: $font-title-color;
 }
 %section-description{

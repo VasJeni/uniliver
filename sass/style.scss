@@ -4,7 +4,8 @@
 //@import "core/_mixin.scss"; if need first add some mixin
 @import "core/_fonts.scss";
 @import "core/_container.scss"; // need delete class test
-@import "blocks/_header.scss";
-@import "blocks/_section_Unilever-in-world";
-@import "blocks/_section-brands.scss";
-@import "blocks/_section-in-Ukraine.scss";
+@import "blocks/section--header";
+@import "blocks/section--Unilever-in-world";
+@import "blocks/section--brands";
+@import "blocks/section--in-Ukraine";
+@import "blocks/section--mission";
