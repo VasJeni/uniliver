@@ -66,9 +66,9 @@ gulp.task('fileinclude', function() {
 // зтиснення svg, png, jpeg
 gulp.task('minify:img', function() {
     // беремо всі картинки крім папки де лежать картинки для спрайту
-    return gulp.src(['./images/**/*', '!./images/sprite/*'])
+    return gulp.src(['./img/**/*', '!./images/sprite/*'])
         .pipe(imagemin().on('error', gutil.log))
-        .pipe(gulp.dest('./public/images/'));
+        .pipe(gulp.dest('./public/img/'));
 });
 
 // зтиснення css

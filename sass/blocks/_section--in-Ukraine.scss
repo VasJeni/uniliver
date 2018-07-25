@@ -6,10 +6,12 @@
 
     &--title {
       @extend %section-title;
+      text-align: center;
 
     }
     &--description {
       @extend %section-description;
+      text-align: center;
     }
   }
   &__in-country-coverage {
@@ -21,7 +23,7 @@
 
       &::before{
         @extend %polygon-position;
-        background-image: url("/img/Polygon 2.11.png");
+        background-image: url("../img/Polygon 2.11.png");
       }
       &__numbers{
         @extend %number-after-polygon;
@@ -39,7 +41,7 @@
 
       &::before {
         @extend %polygon-position;
-        background-image: url("/img/Polygon 2.8.png");
+        background-image: url("../img/Polygon 2.8.png");
       }
       &__numbers {
         @extend %number-after-polygon;
@@ -57,7 +59,7 @@
 
       &::before {
         @extend %polygon-position;
-        background-image: url("/img/Polygon 2.9.png");
+        background-image: url("../img/Polygon 2.9.png");
       }
       &__numbers {
         @extend %number-after-polygon;

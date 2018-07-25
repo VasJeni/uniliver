@@ -57,13 +57,11 @@
 }
 %section-title{
   @extend %font-bold;
-  text-align: center;
   font-size: 60px;
   color: $font-title-color;
 }
 %section-sub-title{
   @extend %font-bold;
-  text-align: center;
   font-size: 36px;
   color: $font-title-color;
 }
@@ -71,7 +69,6 @@
   @extend %font-normal;
   margin: 0 auto;
   margin-top: 15px;
-  text-align: center;
   color: black;
   width: 60%;
   line-height: 1.5em;
