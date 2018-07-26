@@ -2,11 +2,26 @@
   padding-top: 20px;
   padding-bottom: 271px;
   position: relative;
-  background-image: url("../img/header_bg.svg");
+/*  background-image: url("../img/header_bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
+/*  background-color: #000;*/
 
+  &::before{
+    @extend %before;
+    position: absolute;
+    min-width: 1530px;
+    height: 94%;
+    background: linear-gradient(69.43deg, #FEC227 -1.64%, #E8620C 129.86%);
+    z-index: -1;
+    left: 50%;
+    top: -10%;
+    transform-origin: 61% 18%;
+    transform: translateX(-47%) perspective(410px) rotateX(-5deg) rotateY(2deg);
+    border-radius: 100px;
+    box-shadow: 0 0 200px rgba(255, 192, 0, 1);
+  }
 
   &--background{
 
@@ -73,7 +88,10 @@
       text-align: center;
 
       &__logo{
-
+        &--img{
+          width: 100%;
+          height: 100%;
+        }
       }
       &__title{
         margin-top: 20px;
