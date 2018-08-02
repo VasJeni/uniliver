@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="author" content="jenya.vasilyev">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -100,16 +105,29 @@
 <section class="brands">
     <div class="container">
         <div class="brands__wrap">
-            <button class="brands__button__side-left">&#60;</button>
+        <!--    <button class="brands__button__side-left">&#60;</button>-->
             <div class="brands__gallery">
-                <img src="../img/brands/1d9562dc-a4b7-11e7-b915-14dae9b399a6.jpg" alt="" class="brands__gallery-ico">
-                <img src="../img/brands/4ad54021-3411-11e8-abad-14dae9b399a6.png" alt="" class="brands__gallery-ico">
-                <img src="../img/brands/4f5eb7c0-3411-11e8-abad-14dae9b399a6.png" alt="" class="brands__gallery-ico">
-                <img src="../img/brands/5a37f0bec488ac6062ac2aa2.png" alt="" class="brands__gallery-ico">
-                <img src="../img/brands/694cdac2-3411-11e8-abad-14dae9b399a6.png" alt="" class="brands__gallery-ico">
-                <img src="../img/brands/5a39319dc488ac6062ac2ae4.png" alt="" class="brands__gallery-ico">
+                <div class="brands__gallery-ico ico1"></div>
+                <div class="brands__gallery-ico ico2"></div>
+                <div class="brands__gallery-ico ico3"></div>
+                <div class="brands__gallery-ico ico4"></div>
+                <div class="brands__gallery-ico ico5"></div>
+                <div class="brands__gallery-ico ico6"></div>
+                <div class="brands__gallery-ico ico7"></div>
+                <div class="brands__gallery-ico ico8"></div>
+                <div class="brands__gallery-ico ico9"></div>
+                <div class="brands__gallery-ico ico10"></div>
+                <div class="brands__gallery-ico ico11"></div>
+                <div class="brands__gallery-ico ico12"></div>
+                <div class="brands__gallery-ico ico13"></div>
+                <div class="brands__gallery-ico ico14"></div>
+                <div class="brands__gallery-ico ico15"></div>
+                <div class="brands__gallery-ico ico16"></div>
+                <div class="brands__gallery-ico ico17"></div>
+                <div class="brands__gallery-ico ico18"></div>
+                <div class="brands__gallery-ico ico19"></div>
             </div>
-            <button class="brands__button__side-right">&#62;</button>
+<!--            <button class="brands__button__side-right">&#62;</button>-->
         </div>
     </div>
 </section>
@@ -166,7 +184,15 @@
                     экологически ответственную жизнь обычным явлением.
                 </h5>
             </div>
-            <img src="../img/image-mission.png" alt="mission" class="mission__section--image">
+            <div class="mission__section--image-block">
+                <div class="mission__section--image">
+                    <img src="../img/image-mission.png" alt="mission" claas="mission-image">
+                </div>
+                <div class="section__image--wrap">
+                    <img src="../images/pointer.svg" alt="pointer">
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -197,7 +223,76 @@
         </div>
     </div>
 </section>
+<section class="section-advantage">
+    <div class="container advantage__wrap">
+        <h2 class="advantage__title">Преимущества работы в компании</h2>
+        <div class="advantage__offers">
+            <figure class="advantage__education">
+                <figcaption class="advantage__education--title">
+                <h4>Обучение и развитие</h4>
+                <p>Програмы коучинга</p>
+                <p>Индивидуальные планы роста: профессионального и личностного</p>
+                <p>Более 60 вакансий в офис и на фабрику Lipton</p>
+                </figcaption>
+                <img src="../images/sprite/stairs.svg" alt="" class="advantage--ico">
+            </figure>
+            <figure class="advantage__healthy">
+                <figcaption class="advantage__healthy--title">
+                    <h4>Забота о здоровье и окружающей среде</h4>
+                    <p>Тренинги по физическому и ментальному здоровью</p>
+                    <p>Производство соответствует экологическим стандартам</p>
+                </figcaption>
+                <img src="../images/sprite/heart.svg" alt="heart" class="advantage--ico">
+            </figure>
+            <figure class="advantage__bonus">
+                <figcaption class="advantage__bonus--title">
+                    <h4>Выгоды и бонусы для сотрудников</h4>
+                    <p>Гибкие условия работы по методике Agile</p>
+                    <p>Скидки на спортивный зал</p>
+                    <p>Оплата больничных</p>
+                    <p>Развозка до фабрики</p>
+                </figcaption>
+                <img src="../images/sprite/insurance.svg" alt="insurance" class="advantage--ico">
+            </figure>
+        </div>
+        <button class="btn"></button>
+    </div>
+</section>
+
 
 
 </body>
+<script>
+    $('.brands__gallery').slick({
+        autoplay:true,
+      /*  dots: true,*/
+  /*      prevArrow: false,
+        nextArrow: false,*/
+        speed : 300,
+        autoplaySpeed: 1500,
+        slidesToShow: 6,
+        slidesToScroll:6,
+        /*appendArrows: $(),*/
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: true,
+              /*      centerMode: true,*/
+                    centerPadding: '300px',
+
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: true,
+         /*           centerMode: true,*/
+                    centerPadding: '300px',
+                    slidesToShow: 2
+                }
+            }
+        ]
+    });
+</script>
 </html>

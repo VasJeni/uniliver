@@ -1,2 +1,35 @@
 </body>
+<script>
+    $('.brands__gallery').slick({
+        autoplay:true,
+      /*  dots: true,*/
+  /*      prevArrow: false,
+        nextArrow: false,*/
+        speed : 300,
+        autoplaySpeed: 1500,
+        slidesToShow: 6,
+        slidesToScroll:6,
+        /*appendArrows: $(),*/
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: true,
+              /*      centerMode: true,*/
+                    centerPadding: '300px',
+
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: true,
+         /*           centerMode: true,*/
+                    centerPadding: '300px',
+                    slidesToShow: 2
+                }
+            }
+        ]
+    });
+</script>
 </html>
