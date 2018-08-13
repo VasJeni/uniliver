@@ -15,7 +15,7 @@
       position: absolute;
       width: 35%;
       height: 45%;
-      background-image: url("../img/polygon-bloe-white.png");
+      background-image: url("../img/polygon-bloe-white.jpg");
       background-position: left center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -56,6 +56,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 60px;
+    background-color: #ffffff;
   }
   &__healthy{
     @extend .advantage__education;
@@ -96,5 +97,17 @@
     width: 70px;
 
 /*    height: 41px;*/
+  }
+}
+.advantage_button{
+  margin:  40px auto;
+  display: block;
+  @extend %button;
+
+  a {
+    @extend %font-bold;
+    font-size: 18px;
+    color: #fff;
+
   }
 }
