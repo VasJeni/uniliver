@@ -1,0 +1,26 @@
+.et{
+  &--wrapper figure{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__img{
+    width: 45%;
+  }
+  &__section-description{
+    width: 45%;
+    & h3{
+      @extend %section-title;
+    }
+    & p{
+      margin-top: 30px;
+      @extend %font-normal;
+      font-size: 18px;
+      line-height: 1.5em;
+      width: 75%;
+    }
+    & .btn{
+      margin-top: 30px;
+    }
+  }
+}
