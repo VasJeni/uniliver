@@ -1,0 +1,24 @@
+.footer{
+  &__wrap{
+    width: 80%;
+    background-image: url(../img/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 30px top;
+    background-size: cover;
+    padding: 60px 0;
+    margin-top: -50px;
+    margin-left: 30%;
+  }
+  & nav {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+
+    & a{
+      color: white;
+      font-size: 18px;
+      @extend %font-bold;
+  }
+  }
+}
