@@ -8,12 +8,25 @@
       color: white;
     }
     & table{
+      color: #ffffff;
       margin: 0 auto;
       margin-bottom: 20px;
+      & thead{
+        @extend %font-bold;
+        font-size: 30px;
+        text-align: left;
+        & th{
+          padding: 0 20px;
+        }
+      }
       & td{
         padding: 20px;
         vertical-align: top;
         width: 33.3%;
+        line-height: 1.5em;
+        @extend %font-bold;
+        font-size: 18px;
+
       }
       & tfoot td{
         margin: 0 auto;
@@ -21,6 +34,7 @@
           background-image: url("../img/ambasador.png");
           background-repeat: no-repeat;
           background-position: center center;
+
         }
 
 

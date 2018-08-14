@@ -1,31 +1,11 @@
 .header-page{
   padding-top: 20px;
-  padding-bottom: 271px;
+  padding-bottom: 200px;
   position: relative;
   background-image: url("../img/fs-bg.png");
   background-size: initial;
   background-repeat: no-repeat;
-  background-position: center -380px;
-/*  background-color: #000;*/
-
-  //&::before{
-  //  @extend %before;
-  //  position: absolute;
-  //  min-width: 1530px;
-  //  height: 94%;
-  //  background: linear-gradient(69.43deg, #FEC227 -1.64%, #E8620C 129.86%);
-  //  z-index: -1;
-  //  left: 50%;
-  //  top: -10%;
-  //  transform-origin: 61% 18%;
-  //  transform: translateX(-47%) perspective(410px) rotateX(-5deg) rotateY(2deg);
-  //  border-radius: 100px;
-  //  box-shadow: 0 0 200px rgba(255, 192, 0, 1);
-  //}
-
-  &--background{
-
-  }
+  background-position: center -550px;
 
   &__nav-menu{
     width: 100%;
@@ -43,34 +23,28 @@
         color: #BB10E9;
       }
     }
-
   }
   &__content {
     width: 100%;
     margin-top: 67px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     position: relative;
-
-/*    &__bubbles{
-      position: absolute;
-      top: 0;
-      right: 0%;
-      height: 100%;
-      width: 40%;
-      z-index: 1;
-    }*/
+    align-items: flex-start;
     &__text{
+      vertical-align: top;
+      line-height: 1.8em;
+      @extend %font-bold;
+      &--title{
+        font-size: 60px;
+      }
+
       &__button{
         margin-top: 20px;
         @extend %button;
-
-
         &:hover{
           @extend %button-hovver;
         }
-
         &-description{
           font-family: $font-bold;
           font-size: 18px;
@@ -80,7 +54,7 @@
     }
   }
     &__brand{
-      width: 40%;
+      width: 30%;
       display: inline-block;
       text-align: center;
 
@@ -106,6 +80,6 @@
     font-size: 30px;
     font-family: $font-bold;
     color: #fff;
-    width: 40%;
+    width: 50%;
   }
 }
