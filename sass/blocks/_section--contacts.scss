@@ -59,6 +59,9 @@
     @extend %font-bold;
     color: #4736FE;
     font-size: 18px;
+    &:hover{
+      color: #6658FF;
+    }
   }
 }
 .contacts__img{

@@ -103,6 +103,9 @@
   margin:  40px auto;
   display: block;
   @extend %button;
+  &:hover{
+    @extend %button-hovver;
+  }
 
   a {
     @extend %font-bold;

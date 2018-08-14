@@ -20,6 +20,9 @@
       font-size: 16px;
       @extend %font-bold;
       align-self: center;
+      &:hover{
+        color: #FEBC13;
+      }
     }
   }
   &__icon{

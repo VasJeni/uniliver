@@ -1,0 +1,14 @@
+.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
+  opacity: 1;
+  color: #6658FF;
+}
+.slick-prev:hover:after, .slick-prev:focus:after, .slick-next:hover:after, .slick-next:focus:after {
+  opacity: 1;
+  color: #6658FF;
+}
+.slick-prev:before, .slick-next:before {
+  @extend %font-bold;
+  font-size: 36px;;
+  color: orange;
+  -webkit-font-smoothing: antialiased;
+}
