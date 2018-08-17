@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 
@@ -62,7 +63,7 @@
             <div class="header-page__content__text">
                 <h1 class="header-page__content__text--title">Построй карьеру в лидирующей компаниии мира</h1>
                 <h4 class="header-page__content__text--invite">Присоединяйся к Unilever Ukraine</h4>
-                <button class="header-page__content__text__button">
+                <button class="header-page__content__text__button" onclick="openResumeForm()">
                     <p class="header-page__content__text__button-description">Отправить резюме</p>
                 </button>
             </div>
@@ -325,7 +326,7 @@
                         успеха, привлекательные награды и поощрения, а также многочисленные направления для построения
                         карьеры.
                     </p>
-                    <button class="btn">
+                    <button class="btn open-resume-form" onclick="openResumeForm()">
                         <span>Отправить резюме</span>
                     </button>
                 </figcaption>
@@ -392,6 +393,25 @@
         </div>
     </div>
 </section>
+<div class="resume-form d-none">
+    <button class="close-form" onclick="closeResumeForm()"> &#215;</button>
+    <h3>Отправить резюме</h3>
+    <form action="" method="post">
+        <input type="text" placeholder="Фамилия и имя" maxlength="40">
+        <input type="text" placeholder="Вакансия" maxlength="40">
+        <input type="tel" placeholder="Телефон" maxlength="40">
+        <input type="email" placeholder="Email" maxlength="40">
+        <label>
+            <h4>Вставить резюме</h4>
+            <input type="file" class="input_file">
+        </label>
+        <label>
+        <button class="send_form btn">Отправить</button>
+            <input type="submit" class="d-none">
+        </label>
+
+    </form>
+</div>
 
 </body>
 <script>
