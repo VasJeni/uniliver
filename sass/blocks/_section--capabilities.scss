@@ -3,7 +3,7 @@
     & h2{
       @extend %section-title;
       text-align: center;
-      font-size: 50px;
+      font-size: 60px;
       margin-bottom: 20px;
       color: white;
     }
@@ -53,7 +53,7 @@
 }
 .section__capabilities {
   margin-top: -300px;
-  padding-top: 500px;
+  padding-top: 380px;
   padding-bottom: 200px;
   background-image: url("../img/capabilities.png");
   background-size: cover;
@@ -70,7 +70,6 @@
 }
 .btn{
   @extend %button;
-  padding: 10px 20px;
   font-size: 18px;
   color: #ffffff;
   @extend %font-bold;

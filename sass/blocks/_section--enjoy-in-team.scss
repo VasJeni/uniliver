@@ -5,10 +5,10 @@
     align-items: center;
   }
   &__img{
-    width: 45%;
+    width: 55%;
   }
   &__section-description{
-    width: 45%;
+    width: 40%;
     & h3{
       @extend %section-title;
     }

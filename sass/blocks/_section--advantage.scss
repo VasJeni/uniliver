@@ -1,5 +1,5 @@
 .section-advantage{
-  padding-top:300px;
+  padding-top: 250px;
   }
 .advantage__title{
   @extend %section-title;
@@ -20,7 +20,7 @@
       background-size: contain;
       background-repeat: no-repeat;
       top: 0;
-      left: 0;
+      left: -35px;
       z-index: -1;
       transform: translateY(-70%) translateX(-50%);
     }
@@ -32,7 +32,7 @@
   }
   &__education{
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(255, 192, 0, 1);
+    box-shadow: 0 0 70px rgba(255, 192, 0, 0.5);
     padding: 40px;
     padding-right: 15px;
     &--title{

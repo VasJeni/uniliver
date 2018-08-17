@@ -8,8 +8,13 @@
     justify-content: space-between;
   }
   &__photo-gallery {
-    width: 40%;
-    position: relative;
+    width: 55%;
+    background-image: url("../img/worker.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    /*position: relative;
 
     &__item{
 
@@ -38,12 +43,13 @@
         transform: translateY(0%) scale(1.5, 1.5);
 
       }
-    }
+    }*/
   }
   &__section-description{
     width: 40%;
   }
   &__section-description{
+    padding: 40px 0;
     &--title{
       @extend %section-title;
       text-align: left;

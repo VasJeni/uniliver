@@ -1,5 +1,9 @@
 .mission{
   padding: 200px 0 250px 0;
+  background-image: url("../img/bg-mission.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &__wrap{
     display: flex;
@@ -10,6 +14,7 @@
     &-description{
       position: relative;
       width: 45%;
+      z-index: 2;
 
       &::before{
         @extend %before;
@@ -17,7 +22,7 @@
         height: 100%;
         background-image: url("../img/bird.svg");
         background-size: contain;
-        z-index: -1;
+        z-index: 1;
         background-repeat: no-repeat;
 /*        transform: translate(-25%, -50%);*/
         top: -30%;
@@ -27,12 +32,16 @@
     &--title{
       @extend %section-title;
       text-align: left;
+      position: relative;
+      z-index: 2;
     }
     &--sub-title{
       margin-top: 20px;
       @extend %section-sub-title;
       text-align: left;
       width: 100%;
+      position: relative;
+      z-index: 2;
     }
     &--text{
       @extend %section-description;
@@ -59,7 +68,7 @@
   position: relative;
 }
 .section__image--wrap{
-  position: absolute;
+/*  position: absolute;
   background: linear-gradient(202.75deg, #4736FE 31.78%, #B812E9 78.57%);
   width: 200%;
   height: 600px;
@@ -69,9 +78,9 @@
   z-index: -1;
   box-shadow: 30px 60px 100px rgba(71, 54, 254, 0.2);
   border-radius: 110px;
-/*  transform-origin: 61% 18%;*/
-/*  transform: translateX(-47%) perspective(410px) rotateX(-5deg) rotateY(2deg) skewY(5deg);*/
-    transform: translateX(33%) translateY(-14%) skewY(8deg) skewX(18deg);
+!*  transform-origin: 61% 18%;*!
+!*  transform: translateX(-47%) perspective(410px) rotateX(-5deg) rotateY(2deg) skewY(5deg);*!
+    transform: translateX(33%) translateY(-14%) skewY(8deg) skewX(18deg);*/
   & img{
     width: 200px;
     height: 200px;
@@ -81,4 +90,6 @@
     transform: skewY(-8deg) skewX(-18deg);
   }
 }
-.mission__section--image{position: relative}
+.mission__section--image {
+  position: relative;
+}

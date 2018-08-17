@@ -1,9 +1,9 @@
 .footer{
   &__wrap{
-    width: 80%;
+    width: 70%;
     background-image: url(../img/footer_bg.jpg);
     background-repeat: no-repeat;
-    background-position: 30px top;
+    background-position: 45px top;
     background-size: cover;
     padding: 80px 0 60px 0;
     margin-top: -50px;
@@ -31,6 +31,9 @@
     border-radius: 50%;
     background-color: #FEBC13;
     padding: 9px;
+    &:hover{
+      background-color: #9A1CEF;
+    }
   }
 
   .facebook{

@@ -201,15 +201,15 @@
     <div class="container">
         <div class="target__wrap">
             <div class="target__photo-gallery">
-                <div class="target__photo-gallery__item-first">
-                    <img class="target__photo-gallery__item--team" src="../img/team.png" alt="team">
+        <!--        <div class="target__photo-gallery__item-first">
+                    <img class="target__photo-gallery__item&#45;&#45;team" src="../img/team.png" alt="team">
                 </div>
                  <div class="target__photo-gallery__item-second">
-                <img class="target__photo-gallery__item--polygon" src="../img/Polygon2_14.jpg" alt="polygon">
+                <img class="target__photo-gallery__item&#45;&#45;polygon" src="../img/Polygon2_14.jpg" alt="polygon">
                 </div>
                 <div class="target__photo-gallery__item-third">
-                  <img class="target__photo-gallery__item--worker" src="../img/worker.png" alt="worker">
-                </div>
+                  <img class="target__photo-gallery__item&#45;&#45;worker" src="../img/worker.png" alt="worker">
+                </div>-->
             </div>
             <div class="target__section-description">
                 <h2 class="target__section-description--title">Цель Unilever Ukraine</h2>
@@ -397,31 +397,25 @@
 <script>
     $('.brands__gallery').slick({
         autoplay:true,
-      /*  dots: true,*/
-  /*      prevArrow: false,
-        nextArrow: false,*/
         speed : 300,
         autoplaySpeed: 1500,
         slidesToShow: 6,
         slidesToScroll:6,
-        /*appendArrows: $(),*/
         responsive: [
             {
                 breakpoint: 768,
                 settings: {
                     arrows: true,
-              /*      centerMode: true,*/
                     centerPadding: '300px',
 
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 768,
                 settings: {
                     arrows: true,
-         /*           centerMode: true,*/
                     centerPadding: '300px',
-                    slidesToShow: 2
+                    slidesToShow: 3
                 }
             }
         ]
