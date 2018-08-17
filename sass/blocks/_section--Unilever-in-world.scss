@@ -7,10 +7,12 @@
 
     &--title{
       @extend %section-title;
+      text-align: center;
 
     }
     &--description{
       @extend %section-description;
+      text-align: center;
     }
   }
   &__world-coverage{
@@ -23,7 +25,7 @@
 
       &::before {
         @extend %polygon-position;
-        background-image: url("../img/Polygon 2.8.png");
+        background-image: url("../img/poly_palm.png");
       }
       &__numbers {
         @extend %number-after-polygon;
@@ -41,7 +43,7 @@
 
       &::before{
         @extend %polygon-position;
-        background-image: url("/img/Polygon 2.9.png");
+        background-image: url("../img/poly_spoon.png");
       }
       &__numbers{
         @extend %number-after-polygon;
@@ -59,7 +61,7 @@
 
       &::before{
         @extend %polygon-position;
-        background-image: url("/img/Polygon 2.11.png");
+        background-image: url("../img/poly_bubles.png");
       }
       &__numbers{
         @extend %number-after-polygon;

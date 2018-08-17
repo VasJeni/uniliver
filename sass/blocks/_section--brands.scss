@@ -2,7 +2,7 @@
   background-color: #fff;
   margin-top: 50px;
 
-  &__button__side{
+/*  &__button__side{
 
     &-left,
     &-right{
@@ -13,21 +13,21 @@
       }
     }
 
-  }
+  }*/
 
   &__wrap{
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
   }
 
   &__gallery {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
     &-ico {
-      width: 10%;
+/*      height: 100%;*/
+      height: 100px;
+      width: 100px;
+      background-size: contain ;
+      background-position: center center;
+      background-repeat: no-repeat;
     }
   }
 }

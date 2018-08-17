@@ -4,7 +4,16 @@
   content:"";
   position: absolute;
 }
-
+%button{
+  padding: 12px 40px;
+  background: linear-gradient(101.91deg, #BF0CE8 0%, #6A5DF5 100%);
+  border: 1px solid #BC84EC;
+  box-sizing: border-box;
+  border-radius: 33px;
+}
+%button-hovver{
+  background: linear-gradient(101.91deg, #BF0CE8 30%, #6A5DF5 100%);
+}
 //main
 %polygon-position{
   @extend %before;
@@ -57,13 +66,11 @@
 }
 %section-title{
   @extend %font-bold;
-  text-align: center;
   font-size: 60px;
   color: $font-title-color;
 }
 %section-sub-title{
   @extend %font-bold;
-  text-align: center;
   font-size: 36px;
   color: $font-title-color;
 }
@@ -71,7 +78,6 @@
   @extend %font-normal;
   margin: 0 auto;
   margin-top: 15px;
-  text-align: center;
   color: black;
   width: 60%;
   line-height: 1.5em;

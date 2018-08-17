@@ -1,16 +1,11 @@
 .header-page{
   padding-top: 20px;
-  padding-bottom: 271px;
+  padding-bottom: 200px;
   position: relative;
-  background-image: url("../img/header_bg.svg");
-  background-size: cover;
+  background-image: url("../img/fs-bg.png");
+  background-size: initial;
   background-repeat: no-repeat;
-  background-position: center;
-
-
-  &--background{
-
-  }
+  background-position: center -550px;
 
   &__nav-menu{
     width: 100%;
@@ -28,37 +23,28 @@
         color: #BB10E9;
       }
     }
-
   }
   &__content {
     width: 100%;
     margin-top: 67px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     position: relative;
-
-    &__bubbles{
-      position: absolute;
-      top: 0;
-      right: 0%;
-      height: 100%;
-      width: 40%;
-      z-index: 1;
-    }
+    align-items: flex-start;
     &__text{
+      vertical-align: top;
+      line-height: 1.8em;
+      @extend %font-bold;
+      &--title{
+        font-size: 60px;
+      }
+
       &__button{
         margin-top: 20px;
-        padding: 12px 40px;
-        background: linear-gradient(101.91deg, #BF0CE8 0%, #6A5DF5 100%);
-        border: 1px solid #BC84EC;
-        box-sizing: border-box;
-        border-radius: 33px;
-
+        @extend %button;
         &:hover{
-          background: linear-gradient(101.91deg, #6A5DF5 0%, #BF0CE8 100%);
+          @extend %button-hovver;
         }
-
         &-description{
           font-family: $font-bold;
           font-size: 18px;
@@ -68,12 +54,15 @@
     }
   }
     &__brand{
-      width: 40%;
+      width: 30%;
       display: inline-block;
       text-align: center;
 
       &__logo{
-
+        &--img{
+          width: 100%;
+          height: 100%;
+        }
       }
       &__title{
         margin-top: 20px;
@@ -91,6 +80,6 @@
     font-size: 30px;
     font-family: $font-bold;
     color: #fff;
-    width: 40%;
+    width: 50%;
   }
 }

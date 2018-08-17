@@ -1,0 +1,82 @@
+.capabilities{
+  &__wrapper{
+    & h2{
+      @extend %section-title;
+      text-align: center;
+      font-size: 60px;
+      margin-bottom: 20px;
+      color: white;
+    }
+    & table{
+      color: #ffffff;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      & thead{
+        @extend %font-bold;
+        font-size: 30px;
+        text-align: left;
+        & th{
+          padding: 0 20px;
+        }
+      }
+      & td{
+        padding: 20px;
+        vertical-align: top;
+        width: 33.3%;
+        line-height: 1.5em;
+        @extend %font-bold;
+        font-size: 18px;
+
+      }
+      & tfoot td{
+        margin: 0 auto;
+        & .table__image {
+          background-image: url("../img/ambasador.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+
+        }
+
+
+        & iframe{
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 100%;
+          height: 100%;
+          transform: translateX(-50%);
+        }
+      }
+
+    }
+  }
+}
+.section__capabilities {
+  margin-top: -300px;
+  padding-top: 380px;
+  padding-bottom: 200px;
+  background-image: url("../img/capabilities.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.video__wrapper{
+  position: relative;
+  padding-bottom: 47.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.btn{
+  @extend %button;
+  font-size: 18px;
+  color: #ffffff;
+  @extend %font-bold;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  &:hover{
+    @extend %button-hovver;
+  }
+}

@@ -1,0 +1,51 @@
+.footer{
+  &__wrap{
+    width: 70%;
+    background-image: url(../img/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 45px top;
+    background-size: cover;
+    padding: 80px 0 60px 0;
+    margin-top: -50px;
+    margin-left: 30%;
+  }
+  & nav {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+
+    & a{
+      color: white;
+      font-size: 16px;
+      @extend %font-bold;
+      align-self: center;
+      &:hover{
+        color: #FEBC13;
+      }
+    }
+  }
+  &__icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FEBC13;
+    padding: 9px;
+    &:hover{
+      background-color: #9A1CEF;
+    }
+  }
+
+  .facebook{
+    background-image: url("../images/sprite/icoFB.png");
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: center center;
+  }
+  .twitter{
+    background-image: url("../images/sprite/icoTwi.png");
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: center center;
+  }
+}

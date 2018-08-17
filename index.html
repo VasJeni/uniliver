@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="author" content="jenya.vasilyev">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 
 
-<section class="header-page ">
-<!-- <svg class="header-page__content__bubbles" viewBox="0 0 457 418" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M304.615 201.993C304.615 221.029 320.481 236.892 339.519 236.892C358.558 236.892 374.423 221.029 374.423 201.993C374.423 182.957 358.558 167.094 339.519 167.094C320.481 167.094 304.615 182.957 304.615 201.993ZM306.731 305.633C306.731 326.785 323.654 344.763 345.865 344.763C367.019 344.763 385 327.842 385 305.633C385 284.482 368.077 266.504 345.865 266.504C324.711 267.561 306.731 284.482 306.731 305.633ZM188.269 376.49C188.269 408.216 213.654 433.598 245.384 433.598C277.115 433.598 302.5 408.216 302.5 376.49C302.5 344.763 277.115 319.382 245.384 319.382C213.654 319.382 188.269 344.763 188.269 376.49ZM218.942 260.159C218.942 278.137 233.75 292.943 251.731 292.943C269.711 292.943 284.519 278.137 284.519 260.159C284.519 242.18 269.711 227.374 251.731 227.374C233.75 227.374 218.942 242.18 218.942 260.159ZM111.058 325.727C111.058 343.705 125.865 358.511 143.846 358.511C161.827 358.511 176.634 343.705 176.634 325.727C176.634 307.749 161.827 292.943 143.846 292.943C125.865 292.943 111.058 307.749 111.058 325.727ZM195.673 133.252C195.673 161.806 220 186.13 248.558 186.13C277.115 186.13 301.442 161.806 301.442 133.252C301.442 104.698 277.115 80.3742 248.558 80.3742C220 80.3742 195.673 103.64 195.673 133.252ZM257.019 31.7267C257.019 48.6475 270.769 63.4533 288.75 63.4533C305.673 63.4533 320.481 49.7051 320.481 31.7267C320.481 14.8058 306.731 0 288.75 0C271.827 0 257.019 13.7482 257.019 31.7267ZM107.884 111.043C107.884 127.964 121.635 142.77 138.558 142.77C155.481 142.77 170.289 129.022 170.289 111.043C170.289 94.1224 156.539 79.3167 138.558 79.3167C122.692 79.3167 107.884 93.0649 107.884 111.043ZM103.654 217.856C103.654 246.41 125.865 268.619 153.365 268.619C181.923 268.619 204.134 246.41 204.134 217.856C204.134 189.302 181.923 167.094 153.365 167.094C125.865 167.094 103.654 189.302 103.654 217.856ZM0 270.734C0 296.115 21.1538 317.267 46.5384 317.267C71.923 317.267 93.0768 296.115 93.0768 270.734C93.0768 245.353 71.923 224.202 46.5384 224.202C21.1538 223.144 0 245.353 0 270.734ZM28.5575 154.403C28.5575 172.382 43.3653 187.187 61.346 187.187C79.3268 187.187 94.1345 172.382 94.1345 154.403C94.1345 136.425 79.3268 121.619 61.346 121.619C43.3653 121.619 28.5575 136.425 28.5575 154.403ZM317.308 408.216C317.308 391.295 332.115 377.547 347.981 377.547C365.961 377.547 379.711 391.295 379.711 408.216C379.711 427.252 365.961 439.943 347.981 439.943C333.173 441 317.308 427.252 317.308 408.216Z" transform="translate(94.3423 -95) rotate(12.3812)" fill="white" fill-opacity="0.25"/>
-    </svg>-->
-
-
+<section class="header-page">
     <div class="container header-page--background">
         <nav class="header-page__nav-menu">
-            <a href="#" class="header-page__nav-menu--link">Про компанию</a>
-            <a href="#" class="header-page__nav-menu--link">Вакансии</a>
-            <a href="#" class="header-page__nav-menu--link">Возможности для студентов</a>
-            <a href="#" class="header-page__nav-menu--link">Контакты</a>
-            <a href="#" class="header-page__nav-menu--link">Язык</a>
+            <a href="#about__company" class="header-page__nav-menu--link">Про компанию</a>
+            <a href="https://kiev.hh.ua/employer/21071#vacancy-list" class="header-page__nav-menu--link">Вакансии</a>
+            <a href="#capabilities" class="header-page__nav-menu--link">Возможности для студентов</a>
+            <a href="#contacts" class="header-page__nav-menu--link">Контакты</a>
+     <!--       <a href="#" class="header-page__nav-menu&#45;&#45;link">Язык</a>-->
         </nav>
         <div class="header-page__content">
             <div class="header-page__brand">
                 <div class="header-page__brand__logo">
-                    <svg width="302" height="312" viewBox="0 0 302 312" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="header-page__brand__logo--img" viewBox="0 0 302 312" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.36205 30.5907C10.8481 41.5796 27.4918 56.4294 32.0985 56.1324C35.0706 55.8354 36.2594 41.7281 36.2594 30.5907C36.2594 24.2053 36.5566 19.3048 33.2873 18.1168C27.9376 28.9572 13.9688 31.0362 9.36205 30.5907ZM10.4023 25.8387C22.4392 25.8387 33.4359 16.1863 33.4359 7.72192C33.4359 3.71247 31.5041 0.593989 26.7488 -4.53181e-06C27.4918 1.03948 27.9376 1.78198 27.9376 3.71246C27.9376 10.0979 18.2783 17.2258 7.7274 17.2258C3.86369 17.2258 2.67487 19.8988 2.67487 21.2353C2.67487 24.3538 5.79557 25.8387 10.4023 25.8387ZM7.87601 12.6224C6.24137 12.6224 3.8637 12.6224 2.67487 10.0979C1.63464 8.01892 1.93186 4.60346 9.07008e-06 3.11847C1.93186 3.71247 4.0123 3.71246 5.64695 3.71246C10.8481 3.71246 15.9006 0.148503 19.7643 0.148503C22.2906 0.148503 23.0337 1.78198 23.0337 3.41547C23.0337 8.46441 12.6313 12.6224 7.87601 12.6224Z" transform="translate(264.484 55.5385)" fill="white"/>
                         <path d="M9.65926 26.4327C13.523 26.4327 12.78 2.37598 19.1699 2.37598C20.656 2.37598 21.1018 3.86096 21.1018 5.79144C21.1018 11.2859 18.4269 19.3048 18.4269 23.6113C18.4269 25.8387 19.0213 26.5812 20.0616 26.5812C22.885 26.5812 27.6404 -2.26591e-06 32.3957 -2.26591e-06C33.8817 -2.26591e-06 34.6248 1.48498 34.6248 2.96997C34.6248 8.46441 27.4918 24.5023 27.4918 28.9572C27.4918 29.6997 27.789 30.2937 28.2348 30.2937C31.2069 30.2937 37.0024 17.8198 38.7857 11.5829C39.8259 8.31592 41.1634 6.53393 42.5008 6.53393C43.6896 6.53393 44.7299 7.87042 44.7299 10.5434C44.7299 16.7803 38.9343 31.4817 33.8817 41.4311C30.018 48.856 23.9253 59.8449 23.9253 66.0818C23.9253 69.2003 24.5197 72.4673 28.9778 76.3282C21.5476 75.8827 18.5755 75.1402 15.752 69.3488C3.4179 93.9995 38.6371 91.6236 26.6002 113.453C24.3711 109.592 6.9844 105.434 6.9844 82.5652C6.9844 62.8149 24.3711 51.232 24.3711 42.9161C24.3711 41.2826 23.7767 39.9461 22.2906 38.6096C18.4269 35.3426 18.2783 32.6697 15.3062 32.6697C13.0772 32.6697 10.4023 37.7186 13.2258 42.3221C14.1174 43.8071 15.009 44.6981 15.009 46.183C15.009 49.45 9.95647 58.0629 6.38997 58.0629C2.82347 58.0629 -9.07008e-06 49.153 -9.07008e-06 34.7486C-9.07008e-06 21.9778 2.82348 9.20691 6.53859 9.20691C7.57882 9.20691 7.87602 9.9494 7.87602 10.8404C7.87602 12.3254 7.4302 15.2953 7.4302 20.4928C7.28159 25.9872 8.47043 26.4327 9.65926 26.4327Z" transform="translate(3.38696 132.609)" fill="white"/>
                         <path d="M6.38998 56.4294C11.2939 56.4294 15.3062 52.8655 15.3062 44.8465V32.9667C15.3062 28.5117 15.6034 23.3143 18.7241 19.7503C18.4269 21.2353 18.4269 22.8688 18.4269 24.3538C18.4269 34.3032 23.9253 41.1341 23.9253 50.7865C23.9253 54.3505 22.885 56.2809 20.0616 56.2809C17.3867 56.2809 17.6839 53.905 17.0895 53.905C16.6437 53.905 15.9007 55.3899 15.9007 57.0234C15.9007 59.3994 17.6839 63.2604 22.4392 63.2604C26.6001 63.2604 30.0181 59.3994 30.0181 55.0929C30.0181 44.698 21.8448 33.1152 21.8448 21.9778C21.8448 17.0773 23.1822 13.8104 24.2225 11.2859C24.2225 34.3032 43.8382 51.0835 43.8382 60.7359C43.8382 62.9634 42.2036 64.7453 39.8259 64.7453C37.151 64.7453 35.8136 62.6664 35.8136 61.0329C35.8136 60.2904 35.665 59.9934 35.3678 59.9934C34.6248 59.9934 32.5443 62.3694 32.5443 65.3393C32.5443 69.2003 35.665 73.8038 41.4606 73.8038C47.9992 73.8038 51.7142 68.3093 51.7142 63.2604C51.7142 51.0835 27.9376 32.6697 27.9376 12.9194C27.9376 9.5039 28.532 4.15796 30.9097 -1.13295e-06C15.6034 9.8009 10.8481 22.8688 10.8481 34.4517C10.8481 44.4011 10.5509 49.45 5.34975 49.45C2.67488 49.45 1.93186 47.074 1.04024 47.074C0.297217 47.074 -9.07008e-06 49.153 -9.07008e-06 49.747C0.148595 53.905 3.26929 56.4294 6.38998 56.4294Z" transform="translate(36.0798 136.619)" fill="white"/>
@@ -62,7 +63,7 @@
             <div class="header-page__content__text">
                 <h1 class="header-page__content__text--title">Построй карьеру в лидирующей компаниии мира</h1>
                 <h4 class="header-page__content__text--invite">Присоединяйся к Unilever Ukraine</h4>
-                <button class="header-page__content__text__button">
+                <button class="header-page__content__text__button" onclick="openResumeForm()">
                     <p class="header-page__content__text__button-description">Отправить резюме</p>
                 </button>
             </div>
@@ -71,6 +72,7 @@
     </div>
 </section>
 <section class="uiw">
+    <a name="about__company"></a>
     <div class="container">
         <div class="uiw__section-name">
             <h2 class="uiw__section-name--title">
@@ -105,16 +107,29 @@
 <section class="brands">
     <div class="container">
         <div class="brands__wrap">
-            <button class="brands__button__side-left">&#60;</button>
+        <!--    <button class="brands__button__side-left">&#60;</button>-->
             <div class="brands__gallery">
-                <img src="./img/brands/1d9562dc-a4b7-11e7-b915-14dae9b399a6.jpg" alt="" class="brands__gallery-ico">
-                <img src="/img/brands/4ad54021-3411-11e8-abad-14dae9b399a6.png" alt="" class="brands__gallery-ico">
-                <img src="/img/brands/4f5eb7c0-3411-11e8-abad-14dae9b399a6.png" alt="" class="brands__gallery-ico">
-                <img src="/img/brands/5a37f0bec488ac6062ac2aa2.png" alt="" class="brands__gallery-ico">
-                <img src="/img/brands/694cdac2-3411-11e8-abad-14dae9b399a6.png" alt="" class="brands__gallery-ico">
-                <img src="/img/brands/5a39319dc488ac6062ac2ae4.png" alt="" class="brands__gallery-ico">
+                <div class="brands__gallery-ico ico1"></div>
+                <div class="brands__gallery-ico ico2"></div>
+                <div class="brands__gallery-ico ico3"></div>
+                <div class="brands__gallery-ico ico4"></div>
+                <div class="brands__gallery-ico ico5"></div>
+                <div class="brands__gallery-ico ico6"></div>
+                <div class="brands__gallery-ico ico7"></div>
+                <div class="brands__gallery-ico ico8"></div>
+                <div class="brands__gallery-ico ico9"></div>
+                <div class="brands__gallery-ico ico10"></div>
+                <div class="brands__gallery-ico ico11"></div>
+                <div class="brands__gallery-ico ico12"></div>
+                <div class="brands__gallery-ico ico13"></div>
+                <div class="brands__gallery-ico ico14"></div>
+                <div class="brands__gallery-ico ico15"></div>
+                <div class="brands__gallery-ico ico16"></div>
+                <div class="brands__gallery-ico ico17"></div>
+                <div class="brands__gallery-ico ico18"></div>
+                <div class="brands__gallery-ico ico19"></div>
             </div>
-            <button class="brands__button__side-right">&#62;</button>
+<!--            <button class="brands__button__side-right">&#62;</button>-->
         </div>
     </div>
 </section>
@@ -171,12 +186,259 @@
                     экологически ответственную жизнь обычным явлением.
                 </h5>
             </div>
-            <img src="/img/image-mission.png" alt="mission" class="mission__section--image">
+            <div class="mission__section--image-block">
+                <div class="mission__section--image">
+                    <img src="../img/image-mission.png" alt="mission" claas="mission-image">
+                </div>
+                <div class="section__image--wrap">
+                    <img src="../images/pointer.svg" alt="pointer">
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
+<section class="target">
+    <div class="container">
+        <div class="target__wrap">
+            <div class="target__photo-gallery">
+        <!--        <div class="target__photo-gallery__item-first">
+                    <img class="target__photo-gallery__item&#45;&#45;team" src="../img/team.png" alt="team">
+                </div>
+                 <div class="target__photo-gallery__item-second">
+                <img class="target__photo-gallery__item&#45;&#45;polygon" src="../img/Polygon2_14.jpg" alt="polygon">
+                </div>
+                <div class="target__photo-gallery__item-third">
+                  <img class="target__photo-gallery__item&#45;&#45;worker" src="../img/worker.png" alt="worker">
+                </div>-->
+            </div>
+            <div class="target__section-description">
+                <h2 class="target__section-description--title">Цель Unilever Ukraine</h2>
+                <h4 class="target__section-description--sub-title">Быть лучшим работодателем в Украине</h4>
+                <h5 class="target__section-description--text">
+                    В Unilever мы предлагаем вам новые способы личного развития, больше возможностей для достижения
+                    успеха, привлекательные награды и поощрения, а также многочисленные направления для построения
+                    карьеры.
+                </h5>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-advantage">
+    <div class="container advantage__wrap">
+        <h2 class="advantage__title">Преимущества работы в компании</h2>
+        <div class="advantage__offers">
+            <figure class="advantage__education">
+                <figcaption class="advantage__education--title">
+                <h4>Обучение и развитие</h4>
+                <p>Програмы коучинга</p>
+                <p>Индивидуальные планы роста: профессионального и личностного</p>
+                <p>Более 60 вакансий в офис и на фабрику Lipton</p>
+                </figcaption>
+                <img src="../images/sprite/stairs.svg" alt="" class="advantage--ico">
+            </figure>
+            <figure class="advantage__healthy">
+                <figcaption class="advantage__healthy--title">
+                    <h4>Забота о здоровье и окружающей среде</h4>
+                    <p>Тренинги по физическому и ментальному здоровью</p>
+                    <p>Производство соответствует экологическим стандартам</p>
+                </figcaption>
+                <img src="../images/sprite/heart.svg" alt="heart" class="advantage--ico">
+            </figure>
+            <figure class="advantage__bonus">
+                <figcaption class="advantage__bonus--title">
+                    <h4>Выгоды и бонусы для сотрудников</h4>
+                    <p>Гибкие условия работы по методике Agile</p>
+                    <p>Скидки на спортивный зал</p>
+                    <p>Оплата больничных</p>
+                    <p>Развозка до фабрики</p>
+                </figcaption>
+                <img src="../images/sprite/insurance.svg" alt="insurance" class="advantage--ico">
+            </figure>
+        </div>
+        <button class="advantage_button"><a href="#">Посмотреть вакансии</a></button>
+    </div>
+</section>
 
+<section class="section__capabilities">
+    <div class="container">
+        <div class="capabilities__wrapper">
+            <a name="capabilities"></a>
+            <h2>Возможности для студентов и выпускников</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>UFLP</th>
+                    <th>ULIP</th>
+                    <th>Ambassador</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Unilever Future Leaders Programme (UFLP) – это программа для подготовки будущих лидерлв бизнеса.
+                        Всего за 2,5 года ты сможешь пройти путь от выпускника до руководителя одного из отделов Unilever
+                        Ukraine.
+                    </td>
+                    <td>Unilever Leadership Internship Programme (ULIP) – программа для амбициозных студентов 3-5 курсов,
+                        которые уже хотят начать свою карьеру в лучшей бизнес-школе.
+                    </td>
+                    <td>Получи возможность стать амбассадором и представлять компанию Unilever Ukraine в своем университете.
+                        Этот уникальный опыт даст возможность быстрого карьерного роста.
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <div class="video__wrapper">
+                                <iframe align="center center" class="table__video" src="https://www.youtube.com/embed/hiAimdhSbZY" frameborder="0"
+                                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="video__wrapper">
+                                <iframe align="center center" class="table__video" src="https://www.youtube.com/embed/hiAimdhSbZY" frameborder="0"
+                                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                        </td>
+                        <td class="table__image"><img src="../img/ambasador.png" alt="ambassador"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button class="btn">
+                <span>Узнать большше</span>
+            </button>
+        </div>
+    </div>
+</section>
+<section class="enjoy-in-our-team">
+    <div class="container">
+        <div class="et--wrapper">
+            <figure>
+                <div class="et__img">
+                    <img src="../img/ofice__team.jpg" alt="office_team">
+                </div>
+                <figcaption class="et__section-description">
+                    <h3>
+                        Станте частью команды
+                    </h3>
+                    <p>В Unilever мы предлагаем вам новые способы личного развития, больше возможностей для достижения
+                        успеха, привлекательные награды и поощрения, а также многочисленные направления для построения
+                        карьеры.
+                    </p>
+                    <button class="btn open-resume-form" onclick="openResumeForm()">
+                        <span>Отправить резюме</span>
+                    </button>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+<section class="contacts">
+    <div class="container">
+        <a name="contacts"></a>
+        <div class="contacts__wraps">
+            <div class="contacts__description">
+                <h2>Контакты</h2>
+                <figure>
+                    <table>
+                        <tr>
+                            <th>Адрес офиса в Киеве</th>
+                            <td>ул. Дегтяревская, 27T</td>
+                        </tr>
+                        <tr>
+                            <th>Адрес фабрики Lipton:</th>
+                            <td>ул. Свято-Покровская, 141С, Гостомель, Киевская обл.</td>
+                        </tr>
+                        <tr>
+                            <th>Телефон:</th>
+                            <td>044 490 5846</td>
+                        </tr>
+                    </table>
+                    <figcaption>
+                        <div class="map__wrap">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.93430704159!2d30.452539315731816!3d50.460947979476884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc2d46ecc38b%3A0x601c6b3f65917804!2z0LLRg9C70LjRhtGPINCU0LXQs9GC0Y_RgNGW0LLRgdGM0LrQsCwgMjfQkCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1534188858091"
+                                    height="250" frameborder="20" style="border:0" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </figcaption>
+                    <div class="links">
+                        <a href="https://goo.gl/maps/dWaG8zCnZtE2">Найти офис</a>
+                        <a href="https://goo.gl/maps/ps3MecSXLSE2">Найти фабрику</a>
+                    </div>
+                </figure>
+            </div>
+            <div class="contacts__img">
+                <img src="../img/uniliver_manofacturer.jpg" alt="manufacturer">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="footer__wrap">
+            <nav>
+                <a href="#about__company">Про компанию</a>
+                <a href="https://kiev.hh.ua/employer/21071#vacancy-list">Вакансии</a>
+                <a href="http://unileverleaders.com.ua/">Стажировки</a>
+                <a href="https://www.facebook.com/unilever/">
+                    <div class="footer__icon facebook">
+                    </div>
+                </a>
+                <a href="https://twitter.com/unilever">
+                    <div class="footer__icon twitter">
+                    </div>
+                </a>
+            </nav>
+        </div>
+    </div>
+</section>
+<div class="resume-form d-none">
+    <button class="close-form" onclick="closeResumeForm()"> &#215;</button>
+    <h3>Отправить резюме</h3>
+    <form action="" method="post">
+        <input type="text" placeholder="Фамилия и имя" maxlength="40">
+        <input type="text" placeholder="Вакансия" maxlength="40">
+        <input type="tel" placeholder="Телефон" maxlength="40">
+        <input type="email" placeholder="Email" maxlength="40">
+        <label>
+            <h4>Вставить резюме</h4>
+            <input type="file" class="input_file">
+        </label>
+        <label>
+        <button class="send_form btn">Отправить</button>
+            <input type="submit" class="d-none">
+        </label>
+
+    </form>
+</div>
 
 </body>
+<script>
+    $('.brands__gallery').slick({
+        autoplay:true,
+        speed : 300,
+        autoplaySpeed: 1500,
+        slidesToShow: 6,
+        slidesToScroll:6,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: true,
+                    centerPadding: '300px',
+
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: true,
+                    centerPadding: '300px',
+                    slidesToShow: 3
+                }
+            }
+        ]
+    });
+</script>
 </html>
