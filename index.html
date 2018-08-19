@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="author" content="jenya.vasilyev">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
@@ -63,7 +63,7 @@
             <div class="header-page__content__text">
                 <h1 class="header-page__content__text--title">Построй карьеру в лидирующей компаниии мира</h1>
                 <h4 class="header-page__content__text--invite">Присоединяйся к Unilever Ukraine</h4>
-                <button class="header-page__content__text__button" onclick="openResumeForm()">
+                <button class="header-page__content__text__button js-btn-open-resume-form">
                     <p class="header-page__content__text__button-description">Отправить резюме</p>
                 </button>
             </div>
@@ -322,7 +322,7 @@
                         успеха, привлекательные награды и поощрения, а также многочисленные направления для построения
                         карьеры.
                     </p>
-                    <button class="btn open-resume-form" onclick="openResumeForm()">
+                    <button class="btn open-resume-form js-btn-open-resume-form">
                         <span>Отправить резюме</span>
                     </button>
                 </figcaption>
@@ -390,7 +390,7 @@
     </div>
 </section>
 <div class="resume-form d-none">
-    <button class="close-form" onclick="closeResumeForm()"> &#215;</button>
+    <button class="close-form js-close-resume-form"> &#215;</button>
     <h3>Отправить резюме</h3>
     <form action="" method="post">
         <input type="text" placeholder="Фамилия и имя" maxlength="40">

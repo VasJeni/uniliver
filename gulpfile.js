@@ -112,8 +112,8 @@ gulp.task('sprite', function() {
         spritesmith({
             imgName: 'sprite.png',
             cssName: '_icon-mixin.scss',
-            retinaImgName: 'sprite@2x.png',
-            retinaSrcFilter: ['images/sprite/*@2x.png'],
+            // retinaImgName: 'sprite@2x.png',
+            // retinaSrcFilter: ['images/sprite/*@2x.png'],
             cssVarMap: function(sprite) {
                 sprite.name = 'icon-' + sprite.name;
             }
