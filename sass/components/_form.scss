@@ -1,18 +1,18 @@
 .resume-form{
   background: linear-gradient(347.58deg, rgba(252, 182, 35, 0.9) 1.03%, rgba(241, 134, 22, 0.9) 100.41%);
   border-radius: 20px;
-  position: fixed;
+  position: absolute;
   box-shadow: 0 0 200px black;
   padding: 50px;
   top: 50%;
   left: 50%;
-  z-index: 5;
   flex-direction: column;
   transform:translate(-50%, -50%);
   @extend %font-bold;
   font-size: 18px;
   color: white;
   width: 30%;
+  display: flex;
 
   & form{
     display: flex;
@@ -44,17 +44,41 @@ input[type="search"] {
   color: #fff;
 }
 .close-form{
-  width: 20px;
-  height: 20px;
+  padding: 5px 10px;
   position: absolute;
-  top: -30px;
-  right: -30px;
+  top: -50px;
+  right: -50px;
   background-color: #4736FE;
   border-radius: 5px;
+  @extend %font-bold;
+  color: white;
+  font-size: 18px;
 }
 .d-none{
   display: none;
 }
 .d-block{
   display: block;
+}
+.form-wrap{
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+     color: white;
+   }
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
 }

@@ -48,39 +48,13 @@
       width: 100%;
       text-align: left;
     }
-
-    /* &::after{
-       @extend %before;
-       background-image: url("/img/bg-mission.png");
-       background-position: right center;
-       background-repeat: no-repeat;
-       background-size: contain;
-       width: 200%;
-       height: 200%;
-       z-index: -1;
-       top: -50%;
-       left: 0;
-       box-shadow: 30px 60px 100px  #4736FE;
-     }*/
   }
 }
 .mission__section--image-block{
   position: relative;
 }
 .section__image--wrap{
-/*  position: absolute;
-  background: linear-gradient(202.75deg, #4736FE 31.78%, #B812E9 78.57%);
-  width: 200%;
-  height: 600px;
 
-  top: 0;
-  left: 0;
-  z-index: -1;
-  box-shadow: 30px 60px 100px rgba(71, 54, 254, 0.2);
-  border-radius: 110px;
-!*  transform-origin: 61% 18%;*!
-!*  transform: translateX(-47%) perspective(410px) rotateX(-5deg) rotateY(2deg) skewY(5deg);*!
-    transform: translateX(33%) translateY(-14%) skewY(8deg) skewX(18deg);*/
   & img{
     width: 200px;
     height: 200px;

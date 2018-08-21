@@ -14,36 +14,6 @@
     background-repeat: no-repeat;
     background-size: contain;
 
-    /*position: relative;
-
-    &__item{
-
-      &-first{
-        position: absolute;
-        z-index: 2;
-        top: 50%;
-        left: 0;
-        width: 90%;
-        transform: translateY(-100%) scale(1.5, 1.5);
-      }
-      &-second{
-        position: absolute;
-        z-index: 1;
-        top: 50%;
-        right: 0;
-        transform: translate(100%, -50%) scale(1.5, 1.5);
-        width: 30%;
-      }
-      &-third{
-        position: absolute;
-        z-index: 2;
-        top: 50%;
-        left: 0;
-        width: 90%;
-        transform: translateY(0%) scale(1.5, 1.5);
-
-      }
-    }*/
   }
   &__section-description{
     width: 40%;

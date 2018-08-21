@@ -1,0 +1,205 @@
+@media screen and (max-width: 420px) {
+  .header-page{
+    overflow: hidden;
+    &__brand{
+      width: 65%;
+    }
+    &__content{
+      margin-top: 0;
+      padding: 10px 10px 20px 0;
+    }
+    background-position: -1400px -270px;
+    &__nav-menu{
+    display: none;
+    }
+    &__content{
+      flex-direction: column;
+      &__text{
+        margin-top: 40px;
+        line-height: normal;
+        width: 80%;
+        &--invite{
+          font-size: 20px;
+        }
+        &__button-description{
+          font-size: 10px;
+        }
+        &--title{
+          font-size: 35px;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  .uiw__section-name{
+    &--title{
+      font-size: 35px;
+      overflow: hidden;
+    }
+  }
+  .uiw{
+    .section-name--description{
+
+    }
+    &__world-coverage{
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      &>div::before{
+        display: none;
+      }
+      h2{
+        color: #FFC000;
+      }
+      h4{
+
+      }
+      h5{
+
+      }
+      &__co-worker,
+      &__users,
+      &__countries {
+        padding-top: 0px;
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+    }
+    .uiw__world-coverage__users__text,
+    .uiw__world-coverage__countries__text,
+    .uiw__world-coverage__co-worker__text{
+      margin-top: 10px;
+      width: 80%;
+      text-align: center;
+    }
+
+  }
+  .uiw__world-coverage__users__text,
+  .uiw__world-coverage__countries__text,
+  .uiw__world-coverage__co-worker__text{
+    margin-top: 10px;
+    width: 80%;
+    text-align: center;
+  }
+  .in-Ukraine{
+    &__in-country-coverage {
+      display: flex;
+      flex-direction: column;
+
+      &__co-worker{
+        padding-top: 0;
+        width: 100%;
+        text-align: center;
+
+        &::before{
+          display: none;
+        }
+        &__numbers{
+          color: #FFC000;
+        }
+        &__text{
+          margin-top: 0;
+        }
+      }
+      &__investments {
+        padding-top: 0;
+        width: 100%;
+        text-align: center;
+
+        &::before {
+          display: none;
+        }
+        &__numbers {
+          color: #FFC000;
+        }
+        &__text {
+          margin-top: 0;
+        }
+      }
+      &__duration {
+        padding-top: 0;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+
+        &::before {
+          display: none;
+        }
+        &__numbers {
+          color: #FFC000;
+        }
+        &__text {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .mission{
+      background-position: 70% center ;
+    background-size: cover;
+    &__wrap{
+      flex-direction: column;
+    }
+
+    &__section{
+      &-description{
+        width: 100%;
+
+        &::before{
+          display: none;
+        }
+      }
+      &--title{
+        color: white;
+        margin-top: -40px;
+      }
+      &--sub-title{
+        color: white;
+
+      }
+      &--text{
+        display: none;
+      }
+    }
+  }
+  .mission__section--image-block{
+
+  }
+  .target{
+    margin-top: -100px;
+    padding: 0;
+    &__photo-gallery {
+      display: none;
+    }
+    &__section-description{
+      width: 100%;
+    }
+  }
+  .section-advantage{
+    padding-top: 0;
+  }
+  .advantage__title{
+    font-size: 40px;
+  }
+  .advantage {
+    &__wrap::before {
+      display: none;
+
+      &::before {
+
+      }
+    }
+    &__offers{
+      flex-direction: column;
+
+    }
+    &__offers>figure{
+      width: 80%;
+
+    }
+  }
+}
