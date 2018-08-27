@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="author" content="jenya.vasilyev">
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<!--    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>-->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
@@ -13,6 +14,7 @@
     <script type="text/javascript" src="js/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/imask"></script>
+    <script src="//www.youtube.com/player_api"></script>
 </head>
 <body>
 
@@ -258,7 +260,51 @@
     </div>
 </section>
 
+<section class="section__capabilities">
+    <div class="container">
+        <div class="capabilities__wrapper">
+            <a name="capabilities"></a>
+            <h2>Возможности для студентов и выпускников</h2>
 
+            <div class="capabilities__list">
+                <div class="capabilities__item">
+                    <header>UELP</header>
+                    <p>Unilever Future Leaders Programme (UFLP) – это программа для подготовки будущих лидерлв бизнеса.
+                        Всего за 2,5 года ты сможешь пройти путь от выпускника до руководителя одного из отделов Unilever
+                        Ukraine.
+                    </p>
+                    <footer class="capabilities__item__img-f js-open-video">
+                        <div class="capabilities__footer__img">
+                            <img src="img/youtube_button.png">
+                        </div>
+                    </footer >
+                </div>
+                <div class="capabilities__item">
+                    <header>ULIP</header>
+                    <p>Unilever Leadership Internship Programme (ULIP) – программа для амбициозных студентов 3-5 курсов,
+                        которые уже хотят начать свою карьеру в лучшей бизнес-школе.
+                    </p>
+                    <footer class="capabilities__item__img-s js-open-video">
+                        <div class="capabilities__footer__img">
+                            <img src="img/youtube_button.png">
+                        </div>
+                    </footer>
+                </div>
+                <div class="capabilities__item capabilities__item--d-none">
+                    <header>Ambassador</header>
+                    <p>Получи возможность стать амбассадором и представлять компанию Unilever Ukraine в своем университете.
+                        Этот уникальный опыт даст возможность быстрого карьерного роста.
+                    </p>
+                    <footer class="capabilities__item__img-t">
+                    </footer>
+                </div>
+            </div>
+            <button class="btn">
+                <span>Узнать большше</span>
+            </button>
+        </div>
+    </div>
+</section>
 <section class="enjoy-in-our-team">
     <div class="container">
         <div class="et--wrapper">
@@ -282,6 +328,93 @@
         </div>
     </div>
 </section>
+<section class="contacts">
+    <div class="container">
+        <a name="contacts"></a>
+        <div class="contacts__wraps">
+            <div class="contacts__description">
+                <h2>Контакты</h2>
+                <figure>
+                    <table>
+                        <tr>
+                            <th>Адрес офиса в Киеве</th>
+                            <td>ул. Дегтяревская, 27T</td>
+                        </tr>
+                        <tr>
+                            <th>Адрес фабрики Lipton:</th>
+                            <td>ул. Свято-Покровская, 141С, Гостомель, Киевская обл.</td>
+                        </tr>
+                        <tr>
+                            <th>Телефон:</th>
+                            <td>044 490 5846</td>
+                        </tr>
+                    </table>
+                    <figcaption>
+                        <div class="map__wrap">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.93430704159!2d30.452539315731816!3d50.460947979476884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc2d46ecc38b%3A0x601c6b3f65917804!2z0LLRg9C70LjRhtGPINCU0LXQs9GC0Y_RgNGW0LLRgdGM0LrQsCwgMjfQkCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1534188858091"
+                                    height="250" frameborder="20" style="border:0" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </figcaption>
+                    <div class="links">
+                        <a href="https://goo.gl/maps/dWaG8zCnZtE2">Найти офис</a>
+                        <a href="https://goo.gl/maps/ps3MecSXLSE2">Найти фабрику</a>
+                    </div>
+                </figure>
+            </div>
+            <div class="contacts__img">
+                <img src="img/uniliver_manofacturer.jpg" alt="manufacturer">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="footer__wrap">
+            <nav>
+                <a href="#about__company">Про компанию</a>
+                <a href="https://kiev.hh.ua/employer/21071#vacancy-list">Вакансии</a>
+                <a href="http://unileverleaders.com.ua/">Стажировки</a>
+                <a href="https://www.facebook.com/unilever/">
+                    <div class="footer__icon facebook">
+                    </div>
+                </a>
+                <a href="https://twitter.com/unilever">
+                    <div class="footer__icon twitter">
+                    </div>
+                </a>
+            </nav>
+        </div>
+    </div>
+</section>
+<section class="video d-none" id="close_vid" >
+        <div class="video__wrap">
+            <iframe class="js-video-wrap"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+          <!--  src="https://www.youtube.com/embed/ZRjE6u63iJ0"-->
+        </div>
+</section>
+<div class="form-wrap d-none js-close-form-by-wrap">
+    <div class="resume-form js-form-area">
+        <button class="close-form js-close-resume-form"> &#215;</button>
+        <h3>Отправить резюме</h3>
+        <form action="" method="post">
+            <input type="text" placeholder="Фамилия и имя" maxlength="40">
+            <input type="text" placeholder="Вакансия" maxlength="40">
+            <input type="tel" placeholder="Телефон" maxlength="40" id="tel">
+            <input type="email" placeholder="Email" maxlength="40">
+            <label>
+                <h4>Вставить резюме</h4>
+                <input type="file" class="input_file">
+            </label>
+            <label>
+            <button class="send_form btn">Отправить</button>
+                <input type="submit" class="d-none">
+            </label>
+        </form>
+    </div>
+</div>
 
 
 </body>
@@ -312,4 +445,5 @@
         ]
     });
 </script>
+
 </html>

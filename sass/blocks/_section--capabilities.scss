@@ -7,15 +7,15 @@
       margin-bottom: 20px;
       color: white;
     }
-    & table{
+    /*& table{
       color: #ffffff;
       margin: 0 auto;
       margin-bottom: 20px;
-      & thead{
+      & header{
         @extend %font-bold;
         font-size: 30px;
         text-align: left;
-        & th{
+        & p{
           padding: 0 20px;
         }
       }
@@ -48,7 +48,79 @@
         }
       }
 
+    }*/
+  }
+  &__list{
+    display: table;
+
+  }
+  &__item{
+    position: relative;
+    width: 30.33%;
+    height: 100%;
+    padding: 50px 0 220px;
+    vertical-align: middle;
+    display: table-cell;
+    color: white;
+    & header,
+    & footer{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      @extend %font-bold;
+      font-size: 30px;
+      text-align: left;
     }
+    & header{
+      left: 30px;
+    }
+    & p{
+      padding: 0 30px;
+    }
+    & footer{
+      top: auto;
+      bottom: 0;
+      height: 200px;
+      width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 15px 15px;
+
+    }
+    &__img-{
+      &f,
+      &s,
+      &t{
+        background-size: cover ;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      &f:hover .capabilities__footer__img,
+      &s:hover .capabilities__footer__img,
+      &t:hover .capabilities__footer__img{
+        filter: grayscale(0%)
+      }
+      &f{
+        background-image: url("//img.youtube.com/vi/Q18diZBCBvo/1.jpg");
+      }
+      &s{
+        background-image: url("//img.youtube.com/vi/ZRjE6u63iJ0/1.jpg");
+      }
+      &t{
+        background-image: url("../img/ambasador.png");
+
+      };
+    }
+  }
+  &__footer__img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(100%)
+    opacity(0.8);
   }
 }
 .section__capabilities {
@@ -57,8 +129,8 @@
   padding-bottom: 200px;
   background-image: url("../img/capabilities.png");
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 .video__wrapper{
   position: relative;
@@ -74,8 +146,7 @@
   color: #ffffff;
   @extend %font-bold;
   display: block;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin: 20px auto 40px auto;
   &:hover{
     @extend %button-hovver;
   }
