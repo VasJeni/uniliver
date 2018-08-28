@@ -1,0 +1,76 @@
+<section class="video d-none" id="close_vid" >
+<!--
+        <div class="video__wrap">
+            <div id="player"></div>
+            <a href="#" id="pause">Pause</a>
+            <a href="#" id="resume">Resume</a>
+
+            &lt;!&ndash;<iframe class="js-video-wrap"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>&ndash;&gt;
+          &lt;!&ndash;  src="https://www.youtube.com/embed/ZRjE6u63iJ0"&ndash;&gt;
+        </div>
+
+    <script>
+        /*// 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "http://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);*/
+
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        var player;
+        function onYouTubePlayerAPIReady() {
+            player = new YT.Player('player', {
+                height: '315',
+                width: '560',
+                videoId: 'ZRjE6u63iJ0',
+            });
+            document.getElementById('resume').onclick = function() {
+                player.playVideo();
+            };
+            document.getElementById('pause').onclick = function() {
+                player.pauseVideo();
+            };
+        }
+    </script>
+-->
+
+    <div class="video__wrap">
+
+        <!--<iframe class="js-video-wrap"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>-->
+        <!--  src="https://www.youtube.com/embed/ZRjE6u63iJ0"-->
+
+
+        <div id="player"></div>
+        <a href="#" id="pause">Pause</a>
+        <a href="#" id="resume">Resume</a>
+    </div>
+    <script>
+        /*// 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "http://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);*/
+
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        var player;
+        function onYouTubePlayerAPIReady() {
+            player = new YT.Player('player', {
+                height: '315',
+                width: '560',
+                videoId: 'ZRjE6u63iJ0',
+            });
+            document.getElementById('resume').onclick = function() {
+                player.playVideo();
+            };
+            document.getElementById('pause').onclick = function() {
+                player.pauseVideo();
+            };
+        }
+    </script>
+</section>
