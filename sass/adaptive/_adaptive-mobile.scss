@@ -139,7 +139,8 @@
     }
   }
   .mission{
-      background-position: 70% center ;
+    background-image: url("../img/bg-mission.jpg");
+    background-position: 70% center ;
     background-size: cover;
     &__wrap{
       flex-direction: column;
@@ -210,8 +211,21 @@
   }
   .contacts{
     margin: 0;
+
     &__description{
       width: 100%;
+      & figure {
+        flex-direction: column;
+        & figcaption{
+          width: 100%;
+        }
+        & table{
+          width: 100%;
+
+        }
+
+      }
+
     }
     &__img{
       display: none;
@@ -225,11 +239,15 @@
     justify-content: space-between;
     width: 100%;
   }
+  .footer {
+    background-size: 300%;
+    background-position: center top;
+  }
   .footer__wrap{
     margin-top: 0;
     width: 100%;
     margin-left: 0;
-    background-position: -440px center;
+
 
   }
   .footer__wrap>nav{
@@ -249,6 +267,26 @@
     &__list{
       display: flex;
       flex-direction: column;
+    }
+    &__item {
+      flex-direction: column;
+      padding: 50px 0 220px 0;
+      & header {
+        width: 100%;
+        display: flex;
+        bottom: 0;
+      }
+      & p {
+        width: 100%;
+        display: flex;
+
+      }
+      & footer {
+        display: flex;
+        width: 80%;
+        transform: translate(-50%, -100%);
+        top: 100%;
+      }
     }
     &__wrapper h2{
       font-size: 40px;
