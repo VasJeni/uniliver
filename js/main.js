@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
     //начало сдвинутого куска
 
@@ -14,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function closeResumeForm() {
         let getForm = document.getElementsByClassName("form-wrap");
-        getForm[0].classList.remove(" d-block");
+        getForm[0].classList.remove("d-block");
     }
 
     function openFirstVideo() {
