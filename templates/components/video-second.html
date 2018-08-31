@@ -1,23 +1,8 @@
 <section class="second-video d-none">
     <div class="second-video__wrap">
-
-        <!--<iframe class="js-video-wrap"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-        </iframe>-->
-        <!--  src="https://www.youtube.com/embed/ZRjE6u63iJ0"-->
-
-
     <div id="player2"></div>
     </div>
     <script>
-        /*// 2. This code loads the IFrame Player API code asynchronously.
-        var tag = document.createElement('script');
-        tag.src = "http://www.youtube.com/player_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);*/
-
-        // 3. This function creates an <iframe> (and YouTube player)
-        //    after the API code downloads.
         var player2;
         let player;
         function onYouTubePlayerAPIReady() {
@@ -31,18 +16,6 @@
                 width: '560',
                 videoId: 'Q18diZBCBvo',
             });
-            /*document.getElementById('resume').onclick = function() {
-                player.playVideo();
-            };
-            document.getElementById('pause').onclick = function() {
-                player.pauseVideo();
-            };
-            document.getElementById('resume2').onclick = function() {
-                player2.playVideo();
-            };
-            document.getElementById('pause2').onclick = function() {
-                player2.pauseVideo();
-            };*/
         }
     </script>
 </section>

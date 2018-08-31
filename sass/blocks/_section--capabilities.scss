@@ -7,48 +7,6 @@
       margin-bottom: 20px;
       color: white;
     }
-    /*& table{
-      color: #ffffff;
-      margin: 0 auto;
-      margin-bottom: 20px;
-      & header{
-        @extend %font-bold;
-        font-size: 30px;
-        text-align: left;
-        & p{
-          padding: 0 20px;
-        }
-      }
-      & td{
-        padding: 20px;
-        vertical-align: top;
-        width: 33.3%;
-        line-height: 1.5em;
-        @extend %font-bold;
-        font-size: 18px;
-
-      }
-      & tfoot td{
-        margin: 0 auto;
-        & .table__image {
-          background-image: url("../img/ambasador.png");
-          background-repeat: no-repeat;
-          background-position: center center;
-
-        }
-
-
-        & iframe{
-          position: absolute;
-          top: 0;
-          left: 50%;
-          width: 100%;
-          height: 100%;
-          transform: translateX(-50%);
-        }
-      }
-
-    }*/
   }
   &__list{
     display: table;
@@ -102,10 +60,10 @@
         filter: grayscale(0%)
       }
       &f{
-        background-image: url("//img.youtube.com/vi/Q18diZBCBvo/1.jpg");
+        background-image: url("../img/0.jpg");
       }
       &s{
-        background-image: url("//img.youtube.com/vi/ZRjE6u63iJ0/1.jpg");
+        background-image: url("../img/mqdefault.jpg");
       }
       &t{
         background-image: url("../img/ambasador.png");
