@@ -1,0 +1,363 @@
+@media screen and (max-width: 768px) {
+  .header-page {
+    background-position: -950px -600px;
+  }
+  .header-page__content__text--title {
+    font-size: 40px;
+  }
+  .header-page__content__text--invite {
+    font-size: 18px;
+  }
+  .mission {
+    background: none;
+  }
+  .mission__section--title {
+    font-size: 40px;
+  }
+  .mission__section--sub-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .mission__section--text {
+    font-size: 16px;
+  }
+  .target__section-description--title {
+    font-size: 40px;
+  }
+  .target__section-description--sub-title {
+    font-size: 18px;
+  }
+  .target__section-description--text {
+    font-size: 16px;
+  }
+  .capabilities__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .capabilities__item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 45px 0;
+  }
+  .capabilities__item header {
+    width: 25%;
+    display: flex;
+  }
+  .capabilities__item p {
+    width: 25%;
+    display: flex;
+  }
+  .capabilities__item footer {
+    display: flex;
+    width: 40%;
+    transform: translate(0, 0);
+    top: 0;
+  }
+  .contacts {
+    margin-top: 20px;
+  }
+  .contacts__img {
+    display: none;
+  }
+  .contacts__description {
+    width: 100%;
+  }
+  .contacts__description figure {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .contacts__description table {
+    width: 50%;
+  }
+  .contacts__description figcaption {
+    width: 50%;
+  }
+  .links {
+    display: none;
+  }
+  .map__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer {
+    margin-top: 50px;
+    background-image: url(../img/footer_bg.jpg);
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: -500px top;
+  }
+  .footer__wrap {
+    width: 100%;
+    margin-left: 0;
+    padding: 80px 0 15px 0;
+    background: none;
+  }
+  .footer__wrap nav {
+    position: relative;
+    left: 25px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header-page {
+    overflow: hidden;
+    background-position: -1400px -270px;
+  }
+  .header-page__brand {
+    width: 65%;
+  }
+  .header-page__content {
+    margin-top: 0;
+    padding: 10px 10px 20px 0;
+  }
+  .header-page__nav-menu {
+    display: none;
+  }
+  .header-page__content {
+    flex-direction: column;
+  }
+  .header-page__content__text {
+    margin-top: 40px;
+    line-height: normal;
+    width: 80%;
+  }
+  .header-page__content__text--invite {
+    font-size: 20px;
+  }
+  .header-page__content__text__button-description {
+    font-size: 14px;
+  }
+  .header-page__content__text--title {
+    font-size: 35px;
+    line-height: normal;
+  }
+  .uiw__section-name--title {
+    font-size: 35px;
+    overflow: hidden;
+  }
+  .uiw__world-coverage {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .uiw__world-coverage > div::before {
+    display: none;
+  }
+  .uiw__world-coverage h2 {
+    color: #FFC000;
+  }
+  .uiw__world-coverage__co-worker, .uiw__world-coverage__users, .uiw__world-coverage__countries {
+    padding-top: 0px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .uiw .uiw__world-coverage__users__text,
+  .uiw .uiw__world-coverage__countries__text,
+  .uiw .uiw__world-coverage__co-worker__text {
+    margin-top: 10px;
+    width: 80%;
+    text-align: center;
+  }
+  .uiw__world-coverage__users__text,
+  .uiw__world-coverage__countries__text,
+  .uiw__world-coverage__co-worker__text {
+    margin-top: 10px;
+    width: 80%;
+    text-align: center;
+  }
+  .in-Ukraine__in-country-coverage {
+    display: flex;
+    flex-direction: column;
+  }
+  .in-Ukraine__in-country-coverage__co-worker {
+    padding-top: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .in-Ukraine__in-country-coverage__co-worker::before {
+    display: none;
+  }
+  .in-Ukraine__in-country-coverage__co-worker__numbers {
+    color: #FFC000;
+  }
+  .in-Ukraine__in-country-coverage__co-worker__text {
+    margin-top: 0;
+  }
+  .in-Ukraine__in-country-coverage__investments {
+    padding-top: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .in-Ukraine__in-country-coverage__investments::before {
+    display: none;
+  }
+  .in-Ukraine__in-country-coverage__investments__numbers {
+    color: #FFC000;
+  }
+  .in-Ukraine__in-country-coverage__investments__text {
+    margin-top: 0;
+  }
+  .in-Ukraine__in-country-coverage__duration {
+    padding-top: 0;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .in-Ukraine__in-country-coverage__duration::before {
+    display: none;
+  }
+  .in-Ukraine__in-country-coverage__duration__numbers {
+    color: #FFC000;
+  }
+  .in-Ukraine__in-country-coverage__duration__text {
+    margin-top: 0;
+  }
+  .mission {
+    background-image: url("../img/bg-mission.jpg");
+    background-position: 70% center;
+    background-size: cover;
+  }
+  .mission__wrap {
+    flex-direction: column;
+  }
+  .mission__section-description {
+    width: 100%;
+  }
+  .mission__section-description::before {
+    display: none;
+  }
+  .mission__section--title {
+    color: white;
+  }
+  .mission__section--sub-title {
+    color: white;
+  }
+  .mission__section--text {
+    display: none;
+  }
+  .target {
+    margin-top: -100px;
+    padding: 0;
+  }
+  .target__photo-gallery {
+    display: none;
+  }
+  .target__section-description {
+    width: 100%;
+  }
+  .section-advantage {
+    padding-top: 0;
+  }
+  .advantage__title {
+    font-size: 40px;
+  }
+  .advantage__wrap::before {
+    display: none;
+  }
+  .advantage__offers {
+    flex-direction: column;
+  }
+  .advantage__offers > figure {
+    width: 80%;
+  }
+  .et--wrapper > figure {
+    flex-direction: column;
+  }
+  .et__img {
+    width: 100%;
+  }
+  .et__section-description {
+    width: 100%;
+  }
+  .contacts {
+    margin: 0;
+  }
+  .contacts__description {
+    width: 100%;
+  }
+  .contacts__description figure {
+    flex-direction: column;
+  }
+  .contacts__description figure figcaption {
+    width: 100%;
+  }
+  .contacts__description figure table {
+    width: 100%;
+  }
+  .contacts__img {
+    display: none;
+  }
+  .map__wrap {
+    width: 100%;
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer {
+    background-size: 300%;
+    background-position: center top;
+  }
+  .footer__wrap {
+    margin-top: 0;
+    width: 100%;
+    margin-left: 0;
+  }
+  .footer__wrap > nav {
+    flex-direction: column;
+  }
+  .footer__wrap > nav > a {
+    margin-top: 20px;
+  }
+  .resume-form {
+    width: 90%;
+  }
+  .close-form {
+    top: 15px;
+    right: 40px;
+  }
+  .capabilities__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .capabilities__item {
+    flex-direction: column;
+    padding: 50px 0 220px 0;
+  }
+  .capabilities__item header {
+    width: 100%;
+    display: flex;
+    bottom: 0;
+  }
+  .capabilities__item p {
+    width: 100%;
+    display: flex;
+  }
+  .capabilities__item footer {
+    display: flex;
+    width: 80%;
+    transform: translate(-50%, -100%);
+    top: 100%;
+  }
+  .capabilities__wrapper h2 {
+    font-size: 40px;
+  }
+  .capabilities__item {
+    width: 90%;
+    margin-top: 40px;
+  }
+  .capabilities__item--d-none {
+    display: none;
+  }
+  .container {
+    overflow-x: hidden;
+  }
+}
